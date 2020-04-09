@@ -1,0 +1,26 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "author": "Martin Santibanez",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev -P tsconfig.json --respawn --transpileOnly ./src/www/server.ts",
+    "prod": "ts-node -P tsconfig.json src/www/server.ts"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http-errors": "^1.7.3",
+    "moment-timezone": "^0.5.28",
+    "mysql": "^2.18.1",
+    "ts-node": "^8.8.2",
+    "typeorm": "^0.2.24",
+    "typescript": "^3.8.3",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.44"
+  }
+}
