@@ -1,0 +1,48 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+@import '../assets/style/variables';
+
+.text-field-container {
+  margin: 10px auto;
+  max-width: 310px;
+  .text-field {
+    position: relative;
+    &-label {
+      font-size: 14px;
+      font-family: $light-font;
+      color: $grey-darker;
+      padding: 5px 0;
+    }
+    input {
+      width: calc(100% - 10px);
+      padding: 0;
+      border: none;
+      height: 40px;
+      padding-left: 10px;
+      border-radius: 5px;
+      font-family: $light-font;
+      border: 1px solid $main-color;
+
+      &::-webkit-input-placeholder {
+        color: $grey-lighter;
+      }
+      &.valid {
+        color: $validation-content;
+        border: 1px solid $validation-content;
+      }
+      &.invalid {
+        color: $error-invalid;
+        border: 1px solid $error-invalid;
+      }
+    }
+    svg {
+      width: 15px;
+      height: 15px;
+      fill: #1ed351;
+      position: absolute;
+      top: 13px;
+      right: 13px;
+    }
+  }
+}

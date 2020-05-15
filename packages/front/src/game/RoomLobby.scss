@@ -1,0 +1,25 @@
+@import '../assets/style/variables';
+
+.lobby-main {
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  .player-entry {
+    border-radius: 50px;
+    font-size: 40px;
+    background-color: $blue-neutral;
+    color: $white-total;
+    flex: 1;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    &.secondary {
+      background-color: $yellow-skip;
+      margin-top: 30px;
+    }
+  }
+  .versus {
+    font-size: 32px;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,27 @@
+@import '../../assets/style/variables';
+
+.aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aligner-item--top {
+  align-self: flex-start;
+}
+
+.aligner-item--bottom {
+  align-self: flex-end;
+}
+.aligner-item {
+  max-width: 50%;
+}
+.game-header {
+  height: 50px;
+  background-color: $main-color;
+  color: $white-total;
+  font-size: 26px;
+  font-family: sans-serif;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}

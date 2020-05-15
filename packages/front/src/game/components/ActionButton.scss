@@ -1,0 +1,26 @@
+@import '../../assets/style/variables';
+
+.action-button {
+  padding: 10px;
+  width: 100%;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 20%;
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+  margin-left: 10px;
+  background-color: $blue-neutral;
+  &.skip {
+    background-color: $yellow-skip;
+    //background-image: radial-gradient(circle, #fba728, #cf7442);
+  }
+  &.correct {
+    background-color: $green-success;
+    //background-image: radial-gradient(circle, #9ee379, #4caf50);
+  }
+  &.wrong {
+    background-color: $red-failure;
+    //background-image: radial-gradient(circle, #b9121b, #8e001c);
+  }
+}

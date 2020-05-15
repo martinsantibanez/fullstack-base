@@ -1,0 +1,40 @@
+.search-rae {
+  flex-direction: row;
+  display: flex;
+  padding: 10px 20px 10px 20px;
+}
+.search-rae .search {
+  flex: 2;
+}
+.search-rae .results {
+  flex: 3;
+}
+.search-rae .search input {
+  flex: 1 0 auto;
+  font-size: 24px;
+  border: 1px solid black;
+  padding: 4px;
+  min-width: 0;
+}
+.word {
+  padding: 5px 15px;
+  font-size: 20px;
+  text-align: center;
+}
+.rae-definition {
+  padding: 5px 15px;
+  font-size: 20px;
+  text-align: left;
+}
+.add-word {
+  text-align: center;
+  margin-top: 20px;
+}
+.selected {
+  background-color: lightyellow;
+}
+
+textarea {
+  width: 70%;
+  height: 30vh;
+}

@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "preserveSymlinks": true,
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "allowJs": true,
+  },
+  "include": ["src/**/*"],
+  "lib": ["es2017"]
+}

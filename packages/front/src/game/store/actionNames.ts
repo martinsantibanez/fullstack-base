@@ -1,0 +1,9 @@
+export const SET_CURRENT_ROOM = 'SET_CURRENT_ROOM' as const
+export const SET_ROOM_PLAYERS = 'SET_ROOM_PLAYERS' as const
+export const ADD_PLAYER_TO_ROOM = 'ADD_PLAYER_TO_ROOM' as const
+export const SET_PLAYER_NAME = 'SET_PLAYER_NAME' as const
+export const SET_PLAYER_ID = 'SET_PLAYER_ID' as const
+export const SET_ROOM_STATUS = 'SET_ROOM_STATUS' as const
+export const MOVE = 'MOVE' as const
+export const SET_DEFINITION = 'SET_DEFINITION' as const
+export const RESET = 'RESET' as const

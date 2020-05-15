@@ -1,0 +1,9 @@
+{
+  "name": "fullstack-base",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+/// SIZE SCREEN ///
+$mobile-screen: 600px;
+$tablet-portrait-screen: 768px;
+$tablet-landscape-screen: 993px;
+$desktop-screen: 1260px;
+
+$regular-font: sans-serif;
+$light-font: sans-serif;
+$main-color: cadetblue;
+$grey-darker: #000;
+/// COLORS ///
+$white-total: #ffffff;
+$white-lighter: #fafafc;
+$white: #f6fafe;
+$white-darker: #ecf4fd;
+$white-dark: #f9f9f9;
+
+$blue-lighter: #bfe5f9;
+$blue-kombo: #208cfb;
+$blue-medium: #0167d0;
+$blue-dark: #001354;
+
+$black: #000000;
+$black-lighter: #212121;
+
+$grey: #424244;
+$grey-darker: #515152;
+$grey-dark: #6f6f6f;
+$grey-medium: #acacaf;
+$grey-lighter: #d7d7d7;
+$grey-ultra-light: #ebebed;
+
+/// ### paypal
+
+$paypal-button: #fed63b;
+
+/// ### warning
+//#DEAD47
+$warning-no-responsability: #dead47;
+
+// ### error
+
+$error-content: #ff805c;
+$error-invalid: #d31e1e;
+
+// ### valid
+
+$validation-content: #1ed351;
+
+/// BOX-SHADOW ///
+
+$box-shadow-button-hover: 0 0 5px rgba(76, 159, 245, 0.5);
+$box-shadow-cta: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+$box-shadow-cta-focus: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+$box-shadow-completion-warning: 0 1px 2px rgba(0, 0, 0, 0.15), 0 0 15px rgba(0, 0, 0, 0.7);
+$box-shadow-ticket-hover: 0 0 15px rgba(76, 159, 245, 0.5);
+$box-shadow-ticket: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+$green-success: #4caf50;
+$red-failure: #8e001c;
+$yellow-skip: #cf7442;
+$blue-neutral: #0074d9;

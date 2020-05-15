@@ -1,0 +1,163 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+@import '../../assets/style/variables';
+
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+// Needed for some meria queries
+@mixin btn-big {
+  height: 60px;
+  line-height: 60px;
+  font-size: 15px;
+}
+
+.btn {
+  @include button-reset;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: $regular-font;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  .label {
+    // width: fit-content;
+    position: relative;
+  }
+  &.disabled {
+    cursor: default;
+  }
+  &-big {
+    @include btn-big;
+  }
+  &-small {
+    padding: 0px 15px;
+    width: fit-content;
+    margin-left: 0;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-family: 'Work Sans', sans-serif;
+  }
+  &-main {
+    border: 1px solid $main-color;
+    background: $main-color;
+    color: $white-total;
+    font-weight: bold;
+    &.disabled {
+      background-color: rgba(32, 140, 251, 0.5);
+      border: none;
+    }
+  }
+  /*&-light {
+    background: $white-total;
+    color: $blue-kombo;
+    border: 1px solid $blue-kombo;
+    font-weight: 100;
+    &.disabled {
+      color: $grey-medium;
+      border-color: $grey-medium;
+      .spinner {
+        > div {
+          background: $grey-medium;
+        }
+      }
+    }
+  }
+  &-red {
+    border: 1px solid $error-invalid;
+    background: $error-invalid;
+    color: $white-total;
+    font-weight: bold;
+    &.disabled {
+      background-color: rgba(211, 30, 30, 0.5);
+      border: none;
+    }
+  }
+
+  @include min-size(tablet-landscape) {
+    &-small-desktop {
+      width: 35%;
+      max-width: 300px;
+      .spinner {
+        right: 50%;
+        transform: translateX(50%);
+        bottom: -15px;
+        top: auto;
+      }
+    }
+  }*/
+}
+
+/* SPINNER booking sent */
+.spinner {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -60px;
+  > div {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.7s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.7s infinite ease-in-out both;
+    margin-right: 5px;
+    background: $white-total;
+  }
+  .spinner__item1 {
+    -webkit-animation-delay: -0.6s;
+    animation-delay: -0.6s;
+  }
+
+  .spinner__item2 {
+    -webkit-animation-delay: -0.4s;
+    animation-delay: -0.4s;
+  }
+
+  .spinner__item3 {
+    -webkit-animation-delay: -0.2s;
+    animation-delay: -0.2s;
+  }
+}
+@-webkit-keyframes sk-bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes sk-bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}

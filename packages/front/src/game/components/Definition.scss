@@ -1,0 +1,49 @@
+.definition {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  &-read {
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    border: 2px solid black;
+    .letter {
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      border-bottom: 2px solid black;
+      padding: 5px 0px;
+      &-type {
+        font-size: 28px;
+        flex: 1;
+        border-right: 1px solid black;
+      }
+      &-character {
+        font-size: 32px;
+        flex: 1;
+      }
+    }
+    .content {
+      padding: 10px 20px;
+      font-size: 24px;
+      text-align: left;
+    }
+  }
+  &-word {
+    padding: 10px 20px;
+    display: flex;
+    flex: 1;
+    margin-top: 10px;
+    font-size: 28px;
+    text-align: center;
+    border: 2px solid black;
+    align-items: center;
+    .label {
+      flex: 1;
+      font-size: 20px;
+    }
+    .content {
+      flex: 3;
+    }
+  }
+}
